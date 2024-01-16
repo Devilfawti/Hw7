@@ -1,0 +1,81 @@
+#include <iostream>
+
+using namespace std;
+
+ main() {
+	int m, n;
+	int result = 1;
+	cin>>m;
+	cin>>n;
+	for (int i=1;i<=n;i++){
+		result = result * m;
+}
+    cout<< result;
+
+
+}
+
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+ main() {
+	int n;
+	cin>> n;
+	for (int i=2; i<n; i++) 
+        for (int j=2; j*j<=i; j++)
+        {
+            if (i % j == 0) 
+                break;
+            else if (j+1 > sqrt(i)) {
+                cout << i << " ";
+
+            }
+
+        }  
+}
+
+#include <iostream>
+
+using namespace std;
+
+ main() {
+	int m, n, result;
+	cin>>m >> n;
+
+	if (n > m){
+		int a = n;
+		n = m;
+		m = a;
+	}
+
+	for (int i=1; i <= n; i++){
+		if (m % i == 0 && n % i ==0){
+			result = i;
+		}
+	}
+
+	cout<<result;
+}
+
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+ main() {
+	int n;
+	cin>> n;
+	for (int i=2; i<n; i++) 
+        for (int j=2; j*j<=i; j++)
+        {
+            if (i % j == 0) 
+                break;
+            else if (j+1 > sqrt(i)) {
+                cout << i << " ";
+
+            }
+
+        }  
+}
